@@ -8,3 +8,35 @@ Side-by-side mappings comparing JavaScript and Elm. For basic syntax, check out 
 | `npm install`  | `elm-package install`  |
 | `package.json` | `elm-package.json`     |
 | `node-modules` | `elm-stuff/packages`   |
+
+#### Comments
+
+| JavaScript                 | Elm                         |
+| -------------------------- | --------------------------- |
+| `// single line comment`   | `-- single line comment`    |
+| `/* multi line comment */` | `{- multi line comment -}`  |
+
+#### If/Else Statements
+
+##### JavaScript
+```
+if (true) {
+  return "foo"
+} else {
+  return "bar";
+}
+```
+
+##### Elm
+
+```
+if True then "foo" else "bar"
+```
+or
+
+```
+if True then \
+ "foo"
+else \
+ "bar"
+```
