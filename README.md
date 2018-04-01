@@ -11,14 +11,21 @@ Side-by-side mappings comparing JavaScript and Elm. For basic syntax, check out 
 
 #### Comments
 
-| JavaScript                 | Elm                         |
-| -------------------------- | --------------------------- |
-| `// single line comment`   | `-- single line comment`    |
-| `/* multi line comment */` | `{- multi line comment -}`  |
+| JavaScript                 | Elm                        |
+| -------------------------- | -------------------------- |
+| `// single line comment`   | `-- single line comment`   |
+| `/* multi line comment */` | `{- multi line comment -}` |
 
-#### If/Else Statements
+#### Destructuring / Pattern Matching
 
-##### JavaScript
+| JavaScript                | Elm                  |
+| ------------------------- | -------------------- |
+| `let {name, age} = user;` | `{name, age} = user` |
+| `({prop}) => prop`        | `\{prop} -> prop`    |
+
+#### If / Else Statements
+
+* ##### JavaScript
 ```
 if (true) {
   return "foo"
@@ -27,14 +34,13 @@ if (true) {
 }
 ```
 
-##### Elm
+* ##### Elm
 
 ```
 if True then "foo" else "bar"
-```
-or
 
-```
+-- or
+
 if True then \
  "foo"
 else \
