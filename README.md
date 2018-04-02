@@ -1,5 +1,7 @@
 # js-vs-elm
-Side-by-side mappings comparing JavaScript and Elm. For basic syntax, check out the [official Elm documentation](http://elm-lang.org/docs/from-javascript).
+Side-by-side mappings comparing JavaScript / Redux / React vs. Elm.
+This is intended to elaborate on the [official Elm documentation](http://elm-lang.org/docs/from-javascript)
+so make sure you check that out first if you haven't already.
 
 #### Packages / Modules
 
