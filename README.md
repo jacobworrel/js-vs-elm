@@ -26,7 +26,7 @@ Side-by-side mappings comparing JavaScript and Elm. For basic syntax, check out 
 #### If / Else Statements
 
 * ##### JavaScript
-```
+```javascript
 if (true) {
   return "foo"
 } else {
@@ -36,7 +36,7 @@ if (true) {
 
 * ##### Elm
 
-```
+```elm
 if True then "foo" else "bar"
 
 -- or
@@ -45,4 +45,51 @@ if True then \
  "foo"
 else \
  "bar"
+```
+
+##### Redux vs. Elm
+
+| Redux     | Elm      |
+| --------- | -------- |
+| `action`  | `msg`    |
+| `reducer` | `update` |
+| `state`   | `Model`  |
+
+* ##### Redux Reducer Function
+
+```javascript
+function reducer(state = 0, action) {
+  switch (action.type)
+    case 'INCREMENT':
+      return state + 1;
+    case 'DECREMENT':
+      return state - 1;
+    default:
+      return state;
+}
+```
+
+* ##### Elm Update Function
+
+```elm
+
+-- MODEL
+
+type alias Model = Int
+
+model : Model
+model = 0
+
+-- UPDATE
+
+type Msg = Increment | Decrement
+
+update : Msg -> Model -> Model
+update msg model =
+  case msg of
+    Increment ->
+      model + 1
+      
+    Decrement ->
+      model - 1
 ```
