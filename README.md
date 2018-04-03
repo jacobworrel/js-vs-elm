@@ -7,7 +7,7 @@ so make sure you check that out first if you haven't already.
 
 | JavaScript | Elm   |
 | ---------- | ----- |
-| `===`      | `=`   |
+| `===`      | `==`   |
 | `!==`      | `\=`  |
 | `<`        | `<`   |
 | `<=`       | `<=`  |
