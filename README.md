@@ -3,6 +3,24 @@ Side-by-side mappings comparing JavaScript / Redux / React vs. Elm.
 This is intended to elaborate on the [official Elm documentation](http://elm-lang.org/docs/from-javascript)
 so make sure you check that out first if you haven't already.
 
+#### Operators
+
+| JavaScript | Elm   |
+| ---------- | ----- |
+| `=`        | `===` |
+| `/=`       | `!==` |
+| `<`        | `<`   |
+| `<=`       | `<=`  |
+| `>`        | `>`   |
+| `>=`       | `>=`  |
+
+#### Comments
+
+| JavaScript                 | Elm                        |
+| -------------------------- | -------------------------- |
+| `// single line comment`   | `-- single line comment`   |
+| `/* multi line comment */` | `{- multi line comment -}` |
+
 #### Packages / Modules
 
 | JavaScript     | Elm                    |
@@ -11,12 +29,6 @@ so make sure you check that out first if you haven't already.
 | `package.json` | `elm-package.json`     |
 | `node-modules` | `elm-stuff/packages`   |
 
-#### Comments
-
-| JavaScript                 | Elm                        |
-| -------------------------- | -------------------------- |
-| `// single line comment`   | `-- single line comment`   |
-| `/* multi line comment */` | `{- multi line comment -}` |
 
 #### Destructuring / Pattern Matching
 
