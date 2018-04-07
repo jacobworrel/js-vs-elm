@@ -107,3 +107,17 @@ update msg model =
     Decrement ->
       model - 1
 ```
+
+##### React vs. Elm
+
+* ##### Toggling a boolean flag in React
+
+```javascript
+this.setState({ isLoading: !this.state.isLoading });
+```
+
+* ##### Toggling a boolean flag in Elm
+
+```elm
+{ model | isLoading = not model.isLoading }
+```
