@@ -14,6 +14,14 @@ so make sure you check that out first if you haven't already.
 | `>`        | `>`   |
 | `>=`       | `>=`  |
 
+#### Functions
+
+| JavaScript                    | Elm               |
+| ----------------------------- | ----------------- |
+| `const add = (a, b) => a + b` | `add a b = a + b` |
+| `add(1, add(1,2)`             | `add 1 (add 1 2)` |
+
+
 #### Comments
 
 | JavaScript                 | Elm                        |
