@@ -1,8 +1,24 @@
 # js-vs-elm
-Side-by-side mappings comparing JavaScript  vs. Elm.
+Side-by-side mappings comparing JavaScript and Elm.
 
 This is intended to elaborate on the official Elm documentation [From JavaScript?](http://elm-lang.org/docs/from-javascript) page
 so make sure you check that out first if you haven't already.
+
+## Table of Contents
+- [JavaScript vs. Elm](#javascript-vs-elm)
+  - [Operators](#operators)
+  - [Functions](#functions)
+  - [Arrays / Lists](#arrays--lists)
+    - [Concatenation](#concatenation)
+  - [Comments](#comments)
+  - [Packages / Modules](#packages--modules)
+  - [Destructuring / Pattern Matching](#destructuring--pattern-matching)
+  - [If/Else](#if--else)
+- [Redux vs. Elm](#redux-vs-elm)
+  - [Architecture](#architecture)
+  - [State Updater Functions](#state-updater-functions)
+- [React vs. Elm](#react-vs-elm)
+  - [Setting State](#setting-state)
 
 ## JavaScript vs. Elm
 
@@ -48,7 +64,7 @@ const c = [...a , ...b];
 a = [1,2]
 b = [3,4]
 
-c = a ++ b;
+c = a ++ b
 ```
 
 
@@ -75,7 +91,7 @@ c = a ++ b;
 | `let {name, age} = user;` | `{name, age} = user` |
 | `({prop}) => prop`        | `\{prop} -> prop`    |
 
-### If / Else Statements
+### If/Else
 
 ##### JavaScript
 ```javascript
