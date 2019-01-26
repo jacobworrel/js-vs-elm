@@ -13,7 +13,7 @@ so make sure you check that out first if you haven't already.
   - [Comments](#comments)
   - [Packages / Modules](#packages--modules)
   - [Destructuring / Pattern Matching](#destructuring--pattern-matching)
-  - [If/Else](#if--else)
+  - [If/Else](#ifelse)
 - [Redux vs. Elm](#redux-vs-elm)
   - [Architecture](#architecture)
   - [State Updater Functions](#state-updater-functions)
