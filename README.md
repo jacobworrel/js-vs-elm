@@ -25,6 +25,33 @@ so make sure you check that out first if you haven't already.
 | `add(1, add(1,2)`             | `add 1 (add 1 2)` |
 
 
+### Arrays / Lists
+
+#### Concatenation
+
+##### JavaScript
+
+```javascript
+const a = [1,2];
+const b = [3,4];
+
+const c = a.concat(b);
+
+// or
+
+const c = [...a , ...b];
+```
+
+##### Elm
+
+```javascript
+a = [1,2]
+b = [3,4]
+
+c = a ++ b;
+```
+
+
 ### Comments
 
 | JavaScript                 | Elm                        |
