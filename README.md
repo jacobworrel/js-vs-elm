@@ -1,20 +1,23 @@
 # js-vs-elm
-Side-by-side mappings comparing JavaScript / Redux / React vs. Elm.
-This is intended to elaborate on the [official Elm documentation](http://elm-lang.org/docs/from-javascript)
+Side-by-side mappings comparing JavaScript  vs. Elm.
+
+This is intended to elaborate on the official Elm documentation [From JavaScript?](http://elm-lang.org/docs/from-javascript) page
 so make sure you check that out first if you haven't already.
 
-#### Operators
+## JavaScript vs. Elm
+
+### Operators
 
 | JavaScript | Elm   |
 | ---------- | ----- |
-| `===`      | `==`   |
+| `===`      | `==`  |
 | `!==`      | `\=`  |
 | `<`        | `<`   |
 | `<=`       | `<=`  |
 | `>`        | `>`   |
 | `>=`       | `>=`  |
 
-#### Functions
+### Functions
 
 | JavaScript                    | Elm               |
 | ----------------------------- | ----------------- |
@@ -22,14 +25,14 @@ so make sure you check that out first if you haven't already.
 | `add(1, add(1,2)`             | `add 1 (add 1 2)` |
 
 
-#### Comments
+### Comments
 
 | JavaScript                 | Elm                        |
 | -------------------------- | -------------------------- |
 | `// single line comment`   | `-- single line comment`   |
 | `/* multi line comment */` | `{- multi line comment -}` |
 
-#### Packages / Modules
+### Packages / Modules
 
 | JavaScript     | Elm                    |
 | -------------- | ---------------------- |
@@ -38,16 +41,16 @@ so make sure you check that out first if you haven't already.
 | `node-modules` | `elm-stuff/packages`   |
 
 
-#### Destructuring / Pattern Matching
+### Destructuring / Pattern Matching
 
 | JavaScript                | Elm                  |
 | ------------------------- | -------------------- |
 | `let {name, age} = user;` | `{name, age} = user` |
 | `({prop}) => prop`        | `\{prop} -> prop`    |
 
-#### If / Else Statements
+### If / Else Statements
 
-* ##### JavaScript
+##### JavaScript
 ```javascript
 if (true) {
   return "foo"
@@ -56,7 +59,7 @@ if (true) {
 }
 ```
 
-* ##### Elm
+##### Elm
 
 ```elm
 if True then "foo" else "bar"
@@ -69,7 +72,9 @@ else \
  "bar"
 ```
 
-##### Redux vs. Elm
+## Redux vs. Elm
+
+### Architecture
 
 | Redux     | Elm      |
 | --------- | -------- |
@@ -77,7 +82,9 @@ else \
 | `reducer` | `update` |
 | `state`   | `Model`  |
 
-* ##### Redux Reducer Function
+### State Updater Functions
+
+##### Redux Reducer
 
 ```javascript
 function reducer(state = 0, action) {
@@ -91,7 +98,7 @@ function reducer(state = 0, action) {
 }
 ```
 
-* ##### Elm Update Function
+##### Elm Update
 
 ```elm
 
@@ -116,16 +123,18 @@ update msg model =
       model - 1
 ```
 
-##### React vs. Elm
+## React vs. Elm
 
-* ##### Toggling a boolean flag in React
+### Setting State
+
+##### React
 
 ```javascript
-this.setState({ isLoading: !this.state.isLoading });
+this.setState({ counter: 0 });
 ```
 
-* ##### Toggling a boolean flag in Elm
+##### Elm
 
 ```elm
-{ model | isLoading = not model.isLoading }
+{ model | counter = 0 }
 ```
