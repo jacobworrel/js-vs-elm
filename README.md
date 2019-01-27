@@ -18,6 +18,7 @@ so make sure you check that out first if you haven't already.
   - [Architecture](#architecture)
   - [State Updater Functions](#state-updater-functions)
 - [React vs. Elm](#react-vs-elm)
+  - [Components / View Functions](#components--view-functions)
   - [Setting State](#setting-state)
 
 ## JavaScript vs. Elm
@@ -167,6 +168,22 @@ update msg model =
 ```
 
 ## React vs. Elm
+
+### Components / View Functions
+
+##### React
+```jsx harmony
+const HelloWorld = (props) => (
+  <div style={{ color: 'hotpink' }}>Hello world!</div>
+);
+```
+
+##### Elm
+
+```elm
+helloWorld model =
+  div [style "color" "hotpink"] [text "Hello world!"]
+```
 
 ### Setting State
 
