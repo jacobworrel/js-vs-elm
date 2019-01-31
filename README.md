@@ -14,7 +14,6 @@ so make sure you check that out first if you haven't already.
   - [Packages / Modules](#packages--modules)
   - [Destructuring / Pattern Matching](#destructuring--pattern-matching)
   - [If/Else](#ifelse)
-  - [Switch](#switch)
 - [Redux vs. Elm](#redux-vs-elm)
   - [Architecture](#architecture)
   - [State Updater Functions](#state-updater-functions)
@@ -83,8 +82,6 @@ c = a ++ b
 | -------------- | ---------------------- |
 | `npm install`  | `elm install`  |
 | `package.json` | `elm.json`     |
-| `node-modules` | `elm-stuff/packages`   |
-
 
 ### Destructuring / Pattern Matching
 
@@ -115,16 +112,6 @@ if True then \
  "foo"
 else \
  "bar"
-```
-
-### Switch / Case Statements
-
-```javascript
-const zero = 0;
-
-switch (zero) {
-  case 0:
-}
 ```
 
 ## Redux vs. Elm
